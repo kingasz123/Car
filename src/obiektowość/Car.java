@@ -1,3 +1,5 @@
+package obiektowość;
+
 import javax.swing.*;
 
 public class Car {
@@ -7,7 +9,7 @@ public class Car {
     private Integer wiek;
     private  Integer prędkość;
 
-    Car (String marka, String model, Integer rokProdukcji){
+    public Car (String marka, String model, Integer rokProdukcji){
         this.marka = marka;
         this.model = model;
         this.rokProdukcji = rokProdukcji;
