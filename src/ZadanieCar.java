@@ -19,7 +19,7 @@ public class ZadanieCar {
     }
     public void przyśpiesz (Integer zmiana){
         this.prędkość += zmiana;
-        System.out.println ("Twoja aktualna prękość to: " + this.prędkość);
+        System.out.println ("Twoja aktualna prękość jest to: " + this.prędkość);
     }
     public void opiszAuto(){
         System.out.println ("Oto " + this.marka + " " + this.model);
