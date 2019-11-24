@@ -1,3 +1,7 @@
+package obiektowość;
+
+import org.jetbrains.annotations.Contract;
+
 public class Human {
     //Atrybuty klasy
     private String name;
@@ -6,12 +10,13 @@ public class Human {
     private  Integer age;
 
     //Konstruktor
-    Human(String name, String surname, Integer birthYear){
+     public Human(String name, String surname, Integer birthYear){
         this.name = name;
         this.surname = surname;
         this.birthYear = birthYear;
         this.age = this.obliczWiek ();
     }
+
 
     //metody klasy
     private Integer obliczWiek (){
@@ -19,9 +24,9 @@ public class Human {
         return  actualYear - this.birthYear;
     }
 
-    public void przedstawSię (){
+    public void przedstawSie (){
         System.out.println ("Hej, nazywam się " + this.name + "  " + this.surname + ".");
-        System.out.println ("Mam " + this.age + " lat.");
+        System.out.println ("Mam " + this.age + " lat/a.");
     }
     public String getName () {
         return name;
@@ -32,7 +37,7 @@ public class Human {
     }
 
     //setter
-    public void setBirthYear () {
+    public void setBirthYear(int i) {
         this.birthYear = birthYear;
     }
 
